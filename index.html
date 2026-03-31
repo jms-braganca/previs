@@ -183,8 +183,6 @@
 <div class="header-bar">
   <div class="header-inner">
     <div style="display:flex;align-items:center">
-      
-      <div class="header-divider"></div>
       <div class="header-title">PREVIDÊNCIAS</div>
     </div>
     <div class="header-meta">
@@ -739,7 +737,7 @@
 
 <script>
 function toggleDestaques(btn) {
-  var body = btn.parentElement.querySelector('.dest-body');
+  var body = btn.parentElement.querySelector('.dest-body collapsed');
   var icon = btn.querySelector('.dest-toggle-icon');
   var collapsed = body.classList.toggle('collapsed');
   icon.textContent = collapsed ? '▼' : '▲';
